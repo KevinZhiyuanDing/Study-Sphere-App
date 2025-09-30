@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="cpen.app.SearchRoomsController">
+    <left>
+        <fx:include source="sidebar.fxml"/>
+    </left>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20.0">
+            <padding>
+                <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+            </padding>
+
+            <Text strokeWidth="0.0" text="Search Empty Study Rooms"/>
+
+            <HBox alignment="CENTER"  spacing="50">
+                <VBox spacing="10">
+                    <HBox alignment="CENTER" spacing="10">
+                        <Label fx:id="beginDateText" text="Start Date:"/>
+                        <DatePicker fx:id="beginDateSelector" onAction="#beginDateChanged" prefWidth="120" maxWidth="120"/>
+                    </HBox>
+                    <HBox alignment="CENTER" spacing="10">
+                        <Label text="Start Time:"/>
+                        <Spinner fx:id="startTimeSpinner" prefWidth="60"/>
+                    </HBox>
+                </VBox>
+
+                <VBox spacing="10">
+                    <HBox alignment="CENTER" spacing="10">
+                        <Label fx:id="endDateText" text="End Date:"/>
+                        <DatePicker fx:id="endDateSelector" onAction="#endDateChanged" prefWidth="120" maxWidth="120"/>
+                    </HBox>
+                    <HBox alignment="CENTER" spacing="10">
+                        <Label text="End Time:"/>
+                        <Spinner fx:id="endTimeSpinner"  prefWidth="60"/>
+                    </HBox>
+                </VBox>
+
+                <HBox alignment="CENTER" spacing="10">
+                    <Label text="Location:"/>
+                    <ChoiceBox fx:id="locationListChoiceBox" prefWidth="150"/>
+                </HBox>
+
+                <VBox alignment="CENTER">
+                    <Button fx:id="allAvailableButton" onAction="#onAllAvailableClick" text="Search"/>
+                    <Text fx:id="emptyFieldWarningText" wrappingWidth="150" textAlignment="CENTER"/>
+                </VBox>
+            </HBox>
+
+            <TableView fx:id="existingTableView" prefHeight="400" prefWidth="750">
+                <columns>
+                    <TableColumn fx:id="locationCol" minWidth="0.0" prefWidth="140" text="Location" />
+                    <TableColumn fx:id="roomCol" prefWidth="120" text="Room Number" />
+                    <TableColumn fx:id="dateCol" minWidth="0.0" prefWidth="94.0" text="Date" />
+                    <TableColumn fx:id="timeCol" prefWidth="100" text="Time" />
+                    <TableColumn fx:id="requestCol" prefWidth="150" text="Link" />
+                    <TableColumn fx:id="requestWithRoomCol" prefWidth="150" text="Link + Create Session" />
+                </columns>
+            </TableView>
+        </VBox>
+    </center>
+</BorderPane>

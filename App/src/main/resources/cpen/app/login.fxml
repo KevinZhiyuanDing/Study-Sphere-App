@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.BorderPane?>
+
+
+<?import javafx.scene.layout.HBox?>
+<BorderPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cpen.app.UserLoginController">
+   <left>
+      <fx:include source="sidebar.fxml"/>
+   </left>
+   <center>
+      <VBox alignment="CENTER" spacing="10">
+         <HBox alignment="CENTER" spacing="10">
+            <Label text="Username:"/>
+            <TextField fx:id="emailTextField" prefWidth="300" maxWidth="300"/>
+         </HBox>
+         <HBox alignment="CENTER" spacing="10">
+            <Label text="Password:"/>
+            <PasswordField fx:id="passwordField" prefWidth="300" maxWidth="300"/>
+         </HBox>
+         <HBox alignment="CENTER" spacing="20">
+            <Button fx:id="loginButton" mnemonicParsing="false" onAction="#userLogin" text="Login"/>
+            <Button fx:id="createBtn" onAction="#createAccount" text="Create New Account"/>
+         </HBox>
+         <Text fx:id="wrongLoginText"/>
+      </VBox>
+   </center>
+</BorderPane>

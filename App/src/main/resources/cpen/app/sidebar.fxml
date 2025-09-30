@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="cpen.app.SidebarController">
+    <VBox alignment="CENTER" spacing="10">
+        <padding>
+            <Insets top="25" bottom="25" left="10" right="10"/>
+        </padding>
+
+        <Button fx:id="findRoomBtn" text="Find a room" onAction="#onFindRoom" prefWidth="120"/>
+        <Button fx:id="findSessionBtn" text="Find a session" onAction="#onFindSession" prefWidth="120"/>
+        <Button fx:id="userSessionsBtn" text="Your sessions" onAction="#onPendingSession" prefWidth="120"/>
+        <Button fx:id="newSessionBtn" text="New session" onAction="#onNewSession" prefWidth="120"/>
+        <Button fx:id="loginBtn" text="Login" onAction="#onLogin" prefWidth="120"/>
+
+        <Region VBox.vgrow="ALWAYS"/>
+
+        <Button text="Logout" prefWidth="120"/>
+        <Button fx:id="connectBtn" text="Connect to server" onAction="#onConnect" prefWidth="120"/>
+        <Label fx:id="networkLabel" text="Server not found" alignment="CENTER"/>
+    </VBox>
+    <Separator orientation="VERTICAL"/>
+</HBox>
