@@ -1,0 +1,19 @@
+# Default ignored files
+/shelf/
+/workspace.xml
+
+*.iml
+.idea/
+.idea/*.xml
+
+Thumbs.db
+Desktop.ini
+
+# Ignoring python bytecode files
+__pycache__/
+*.pyc
+
+# Ignoring .class files
+*.class
+
+*.csv
