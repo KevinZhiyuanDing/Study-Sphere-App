@@ -2,9 +2,9 @@ package cpen.network.Requests;
 
 import org.json.JSONObject;
 
-import cpen.adt.DateTimeFormat;
-import cpen.adt.Session;
-import cpen.adt.User;
+import cpen.ADT.DateTimeFormat;
+import cpen.ADT.Session;
+import cpen.ADT.User;
 
 /**
  * Represents a request that sends info to server on whether host accepts or rejects

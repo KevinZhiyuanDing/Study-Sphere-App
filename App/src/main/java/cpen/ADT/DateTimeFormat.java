@@ -1,5 +1,5 @@
 // Move to cpen/adt/DateTimeFormat.java
-package cpen.adt;
+package cpen.ADT;
 
 /**
  * All possible DateTimeFormat types.

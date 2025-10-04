@@ -1,7 +1,5 @@
 package cpen.app;
 
-import cpen.adt.User;
-import cpen.adt.LocalStorage;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.chart.PieChart;
@@ -12,6 +10,9 @@ import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+
+import cpen.ADT.LocalStorage;
+import cpen.ADT.User;
 
 public class UserLoginController {
 

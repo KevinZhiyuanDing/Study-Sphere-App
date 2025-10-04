@@ -2,8 +2,8 @@ package cpen.network.Requests;
 
 import org.json.JSONObject;
 
-import cpen.adt.DateTime;
-import cpen.adt.DateTimeFormat;
+import cpen.ADT.DateTime;
+import cpen.ADT.DateTimeFormat;
 
 /**
  * Represents a request that sends info to server for all the available

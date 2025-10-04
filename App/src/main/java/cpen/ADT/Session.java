@@ -1,5 +1,5 @@
 // Move to cpen/adt/Session.java
-package cpen.adt;
+package cpen.ADT;
 
 import java.util.ArrayList;
 import cpen.ADT.DateTime;

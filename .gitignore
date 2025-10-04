@@ -1,3 +1,46 @@
+# Ignore build directories anywhere in the repository
+**/build/
+/build/
+
+# Gradle wrapper and caches
+.gradle/
+
+# Java/IDE files
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+.gradle/
+/out/
+
+# IntelliJ
+/.idea/
+*.iws
+*.ipr
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+*.pkl
+
+# Distribution artifacts
+dist/
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+
+# Keep existing App/.gitignore and other subproject ignores in effect
 # Default ignored files
 /shelf/
 /workspace.xml

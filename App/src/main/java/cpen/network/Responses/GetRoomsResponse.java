@@ -1,9 +1,10 @@
 package cpen.network.Responses;
 
-import cpen.adt.Room;
-import cpen.adt.DateTime;
-
 import org.json.JSONObject;
+
+import cpen.ADT.DateTime;
+import cpen.ADT.Room;
+
 import org.json.JSONArray;
 
 import java.util.ArrayList;

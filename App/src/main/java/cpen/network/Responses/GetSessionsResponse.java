@@ -1,8 +1,9 @@
 package cpen.network.Responses;
 
-import cpen.adt.*;
 import org.json.JSONArray;
 import org.json.JSONObject;
+
+import cpen.ADT.*;
 
 import java.util.ArrayList;
 import java.util.List;

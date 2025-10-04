@@ -2,7 +2,7 @@ package cpen.network.Requests;
 
 import org.json.JSONObject;
 
-import cpen.adt.*;
+import cpen.ADT.*;
 
 public class JoinSessionRequest implements Request {
     private RequestType requestType = RequestType.JOIN_SESSION;

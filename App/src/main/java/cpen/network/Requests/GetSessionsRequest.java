@@ -2,7 +2,7 @@ package cpen.network.Requests;
 
 import org.json.JSONObject;
 
-import cpen.adt.*;
+import cpen.ADT.*;
 
 /**
  * Represents a request that sends info to server for all the available

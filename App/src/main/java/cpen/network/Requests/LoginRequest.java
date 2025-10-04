@@ -2,7 +2,7 @@ package cpen.network.Requests;
 
 import org.json.JSONObject;
 
-import cpen.adt.User;
+import cpen.ADT.User;
 
 /**
  * Represents a request that sends info to server, to login a user if user is in the database.

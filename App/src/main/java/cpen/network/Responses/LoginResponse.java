@@ -1,7 +1,8 @@
 package cpen.network.Responses;
 
 import org.json.JSONObject;
-import cpen.adt.User;
+
+import cpen.ADT.User;
 
 /**
  * Represents a response that sends info to client on whether user has been logged in.

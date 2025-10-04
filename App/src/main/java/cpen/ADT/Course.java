@@ -1,5 +1,4 @@
-// Move to cpen/adt/Course.java
-package cpen.adt;
+package cpen.ADT;
 
 /**
  * Represents a UBC course with a specific subject, course code, and year level.

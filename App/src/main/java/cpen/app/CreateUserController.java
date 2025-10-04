@@ -1,6 +1,6 @@
 package cpen.app;
 
-import cpen.adt.User;
+import cpen.ADT.User;
 import cpen.network.Network;
 import cpen.network.Requests.CreateUserRequest;
 import cpen.network.Responses.CreateUserResponse;

@@ -1,7 +1,8 @@
 package cpen.network.Responses;
 
 import org.json.JSONObject;
-import cpen.adt.User;
+
+import cpen.ADT.User;
 
 public class JoinSessionResponse implements Response {
     private final ResponseType responseType = ResponseType.JOIN_SESSION;

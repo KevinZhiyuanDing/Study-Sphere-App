@@ -1,8 +1,8 @@
 package cpen.app;
 
-import cpen.adt.Room;
-import cpen.adt.Session;
-import cpen.adt.User;
+import cpen.ADT.Room;
+import cpen.ADT.Session;
+import cpen.ADT.User;
 import cpen.network.Network;
 
 /**

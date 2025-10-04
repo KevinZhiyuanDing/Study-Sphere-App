@@ -1,4 +1,4 @@
-package cpen.adt;
+package cpen.ADT;
 
 /**
  * Represents a user with a username and password.

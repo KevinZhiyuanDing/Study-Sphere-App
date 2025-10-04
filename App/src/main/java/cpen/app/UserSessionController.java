@@ -1,11 +1,11 @@
 package cpen.app;
 
-import cpen.adt.Course;
-import cpen.adt.DateTime;
-import cpen.adt.DateTimeFormat;
-import cpen.adt.Room;
-import cpen.adt.Session;
-import cpen.adt.User;
+import cpen.ADT.Course;
+import cpen.ADT.DateTime;
+import cpen.ADT.DateTimeFormat;
+import cpen.ADT.Room;
+import cpen.ADT.Session;
+import cpen.ADT.User;
 import cpen.network.Network;
 import cpen.network.Requests.GetRoomsRequest;
 import cpen.network.Requests.GetSessionsRequest;

@@ -37,15 +37,8 @@ run {
   doFirst {
     jvmArgs = [
       '--module-path', configurations.runtimeClasspath.asPath,
-      '--add-modules', 'javafx.controls,javafx.fxml'
-    ]
-  }
-}
-run {
-  doFirst {
-    jvmArgs = [
-      '--module-path', configurations.runtimeClasspath.asPath,
-      '--add-modules', 'javafx.controls,javafx.fxml'
+      '--add-modules', 'javafx.controls,javafx.fxml',
+      '--add-reads', 'cpen.app=ALL-UNNAMED'
     ]
   }
 }
